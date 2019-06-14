@@ -1,0 +1,19 @@
+
+@keyframes scale_and_move {
+  0% {
+    transform-origin: right;
+    transform: scaleX(1)
+  }
+  50% {
+    transform-origin: right;
+    transform: scaleX(0)
+  }
+  51% {
+    transform: scaleX(0);
+    transform-origin: left
+  }
+  to {
+    transform-origin: left;
+    transform: scaleX(1)
+  }
+}
