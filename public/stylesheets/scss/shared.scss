@@ -11,6 +11,7 @@
 html {
   font-size: 10px;
   font-family: $circularMedium;
+  height: 100%;
   @media (max-width: 551px) {
     font-size: 55%;
   }
@@ -21,8 +22,17 @@ html {
 
 body {
   margin: 0;
+  height: 100%;
   -webkit-font-smoothing: antialiased;
-
+  @include bodyMenu;
+  .header {
+    @include header;
+    &__menu {
+      #navigation {
+        @include navigation;
+      }
+    }
+  }
   .footer {
     // @include footer;
   }
