@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAGA,IAAK,CACH,UAAU,CAAE,KAAK",
+"sources": ["../scss/our-team.scss"],
+"names": [],
+"file": "our-team.css"
+}

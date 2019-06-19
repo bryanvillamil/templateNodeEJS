@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAGA,IAAK,CACH,UAAU,CCFJ,IAAI",
-"sources": ["../scss/our-people.scss","../scss/_variables.scss"],
-"names": [],
-"file": "our-people.css"
-}

@@ -1,0 +1,47 @@
+{
+  "titlePage": "Our Team",
+  "ourTeam": [
+    {
+      "id":"1",
+      "name": "Alberto Parra",
+      "job": "Cargo",
+      "description": "<p>description</p>",
+      "photo": "photo"
+    },
+    {
+      "id":"2",
+      "name": "Diego Gomez",
+      "job": "Cargo",
+      "description": "<p>description</p>",
+      "photo": "photo"
+    },
+    {
+      "id":"3",
+      "name": "Camila Corrales",
+      "job": "Cargo",
+      "description": "<p>description</p>",
+      "photo": "photo"
+    },
+    {
+      "id":"4",
+      "name": "Alex Cardona",
+      "job": "Cargo",
+      "description": "<p>description</p>",
+      "photo": "photo"
+    },
+    {
+      "id":"5",
+      "name": "Bryan Villamil",
+      "job": "Cargo",
+      "description": "<p>description</p>",
+      "photo": "photo"
+    },
+    {
+      "id":"6",
+      "name": "Isabel Corrales",
+      "job": "Cargo",
+      "description": "<p>description</p>",
+      "photo": "photo"
+    }
+  ]
+}

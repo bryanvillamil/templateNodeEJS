@@ -11,8 +11,8 @@ router.get('/our-work', function (req, res, next) {
   res.render('our-work', { title: 'Our Work' });
 });
 
-router.get('/our-people', function (req, res, next) {
-  res.render('our-people', { title: 'People' });
+router.get('/our-team', function (req, res, next) {
+  res.render('our-team', { title: 'Our Team' });
 });
 
 

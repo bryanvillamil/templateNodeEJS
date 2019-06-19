@@ -16,16 +16,39 @@
   justify-content: space-around;
   z-index: 5;
   padding: 0;
+  transition: all .5s;
+  // Header Fixed
   &.fixed {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 9;
+    background: $white;
+    .header__logo{
+      a {
+        color: #333;
+      }
+    }
+    .header__menu {
+      nav#navigation {
+        .nav-menus-wrapper {
+          ul {
+            li {
+              a {
+                color: #333;
+              }
+            }
+          }
+        }
+      }
+    }
   }
   &__content {
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
     display: flex;
+    align-items: center;
     position: relative;
     padding: 1.5rem 0;
     nav#navigation {
@@ -59,12 +82,45 @@
       }
     }
   }
+  &__logo {
+    order: 2;
+    width: 100%;
+    @include center;
+    a {
+      color: $white;
+      font-size: 2rem;
+    }
+  }
+  &__menu {
+    order: 1;
+    width: 5rem;
+    @include center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+  }
+  @media(min-width: $lg) {
+    &__content {
+      justify-content: space-between;
+    }
+    &__logo {
+      order: 1;
+      width: initial;
+    }
+    &__menu {
+      order: 2;
+      width: auto;
+      position: relative;
+    }
+  }
 }
 // Navigation
 @mixin navigation {
   // Version Mobil
   &.navigation-portrait {
-    padding: 1rem 2rem 0;
+    padding: 0 1rem;
     width: 100%;
     .nav-logo {
       .nav-brand {
@@ -75,20 +131,16 @@
       .nav-toggle {
         @include center;
         flex-direction: column;
-        width: 30px;
+        width: 35px;
         height: 30px;
         padding: 6px 2px 0;
-        position: absolute;
-        top: 18%;
-        margin-top: -14px;
-        right: 0;
         cursor: pointer;
         transition: all .5s;
         span {
           width: 100%;
           height: 4px;
           background: $white;
-          margin-bottom: 4px;
+          margin-bottom: 5px;
           border-radius: 5px;
           display: flex;
           transition: all .5s;
@@ -189,7 +241,7 @@
           a {
             text-transform: capitalize;
             color: $white;
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             letter-spacing: 1px;
             transition: all .5s;
             position: relative;
