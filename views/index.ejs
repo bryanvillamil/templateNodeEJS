@@ -9,12 +9,12 @@
     <link rel="stylesheet" href="/stylesheets/css/home.css">
   </head>
   <body>
-    <%- include templates/header %>
+    <%- include('templates/header', {pageHome: true}); %>
     <div class="contenedor">
       <h1>Page Home</h1>
     </div>
 
-    <section class="title">
+    <section class="title" id="title">
       <h1>Title Home</h1>
     </section>
 

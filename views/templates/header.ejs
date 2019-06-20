@@ -17,7 +17,10 @@
           </div>
           <div class="nav-menus-wrapper" style="transition-property: left;">
             <ul class="nav-menu">
-              <li class=""><a href="#valores" data-menu="valores">valores</a></li>
+              <% if(locals.pageHome){ %>
+                <li class=""><a href="#title" data-menu="title">title</a></li>
+                <li class=""><a href="#valores" data-menu="valores">valores</a></li>
+              <% } %>
               <li class=""><a href="/our-work">Our Work</a></li>
               <li class=""><a href="/our-team">Our Team</a></li>
               <li><a href="/services" data-menu="services">Services</a></li>
