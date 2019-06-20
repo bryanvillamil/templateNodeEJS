@@ -4,3 +4,24 @@
 body {
   background: $black;
 }
+
+.contenedor {
+  height: 70vh;
+}
+
+section {
+  &.title   {
+    background: navy;
+    height: 60rem;
+    h1 {
+      margin: 0;
+    }
+  }
+  &.valores {
+    background: red;
+    height: 80rem;
+    h1 {
+      margin: 0;
+    }
+  }
+}
